@@ -10,18 +10,15 @@ const Doctor = ({ el }) => {
       className="block rounded-lg border-[1px] p-1 hover:border-primary transition-all ease-in-out duration-500 cursor-pointer hover:shadow-md  flex-col h-full"
     >
       <div
-        className="relative overflow-hidden bg-cover bg-no-repeat"
+        className="relative overflow-hidden aspect-w-2 aspect-h-2 sm:aspect-w-1 sm:aspect-h-1"
         data-twe-ripple-init
         data-twe-ripple-color="light"
       >
         <img
-          className="rounded-t-lg w-full h-80"
+          className="rounded-lg"
           alt="doctor"
           src={el.attributes?.Image?.data?.attributes?.url}
         />
-        <a href="#!">
-          <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"></div>
-        </a>
       </div>
       <div className="flex flex-col flex-grow p-6">
         <button className="bg-[#AAD7D9] px-12 py-2 rounded-sm mb-2 text-primary">
